@@ -1,5 +1,5 @@
 
-d3.json("file:///C:/Users/Maciek/Documents/Football_data/away_players.json", function(data) {
+d3.json("file", function(data) {
         index = -1;
         update_data(true);
         function update_data(forward) {
@@ -38,8 +38,7 @@ d3.json("file:///C:/Users/Maciek/Documents/Football_data/away_players.json", fun
     
         var pitch_image = svg
         .append("svg:image")
-        .attr("xlink:href", "file:///C:/Users/Maciek/Documents/Football_data/pitch.jpg")
-        .attr("width", '1000')
+        .attr("xlink:href", "file"
         .attr("height", '1000')
         .attr('x',0)
         .attr('y',0)
@@ -55,7 +54,7 @@ d3.json("file:///C:/Users/Maciek/Documents/Football_data/away_players.json", fun
         .append("text")
     
         var playersImgs = imgContainers
-        .attr("xlink:href", "file:///C:/Users/Maciek/Documents/Football_data/kit.bmp")
+        .attr("xlink:href", "file")
         .attr("x", function(d){return 100 * d[1] -50 ;})
         .attr("y", function(d){return 70 * d[2]; })
         .attr("width",100)
